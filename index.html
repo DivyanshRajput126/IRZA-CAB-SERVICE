@@ -33,6 +33,8 @@
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
   <!-- favicon icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_ico/apple-touch-icon.png">
@@ -130,45 +132,45 @@
         <div class="col-md-12	featured-top">
           <div class="row no-gutters">
             <div class="col-md-4 d-flex align-items-center">
-              <form action="mainform.php" class="request-form ftco-animate bg-primary" method="post">
+              <form action="" class="request-form ftco-animate bg-primary" method="post">
                 <h2>Make your trip</h2>
                 <div class="form-group">
                   <label for="" class="label">Pick-up location</label>
-                  <input type="text" class="form-control" name="pickup" placeholder="City, Airport, Station, etc">
+                  <input type="text" class="form-control" name="pickup" id="pickup" placeholder="City, Airport, Station, etc">
                 </div>
                 <div class="form-group">
                   <label for="" class="label">Drop-off location</label>
-                  <input type="text" class="form-control" name="drop" placeholder="City, Airport, Station, etc">
+                  <input type="text" class="form-control" name="drop" id="drop" placeholder="City, Airport, Station, etc">
                 </div>
                 <div class="d-flex">
                   <div class="form-group mr-2">
                     <label for="" class="label">Pick-up date</label>
-                    <input type="text" class="form-control" name="pickup-date" id="book_pick_date" placeholder="Date">
+                    <input type="text" class="form-control" name="pickup-date" id="pick_date" placeholder="Date">
                   </div>
                   <div class="form-group ml-2">
                     <label for="" class="label">Drop-off date</label>
-                    <input type="text" class="form-control" name="drop-date" id="book_off_date" placeholder="Date">
+                    <input type="text" class="form-control" name="drop-date" id="drop_date" placeholder="Date">
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="" class="label">Pick-up time</label>
-                  <input type="text" class="form-control" id="time_pick" name="pickup-time" placeholder="Time">
+                  <input type="text" class="form-control" id="time_pick" name="pick_time" placeholder="Time">
                 </div>
                 <div class="form-group">
                   <label for="" class="label">Select Car</label>
                   <!-- <input type="text" class="form-control" placeholder="Select Car"> -->
                   <select name="cars" class="form-control" id="cars" name="car">
+                    <option value="swift-dzire" style="color: #000000;">Suzuki Swift Dzire</option>
                     <option value="ertiga" style="color: #000000;">Suzuki Ertiga</option>
                     <option value="innova" style="color: #000000;">Toyota Innova</option>
                     <option value="innove-crysta" style="color: #000000;">Toyota Innova Crysta</option>
-                    <option value="swift-dzire" style="color: #000000;">Suzuki Swift Dzire</option>
                     <option value="force-traveller" style="color: #000000;">Force Traveller</option>
                     <option value="Bus" style="color: #000000;">Bus</option>
                     <option value="premium" style="color: #000000;">Other Premium Cars</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="Rent A Car Now" class="btn btn-secondary py-3 px-4" name="submit">
+                  <input type="submit" onclick="whatsapp()" value="Rent A Car Now" class="btn btn-secondary py-3 px-4" name="submit">
                 </div>
               </form>
             </div>
@@ -657,6 +659,10 @@
     </div>
   </footer>
 
+  <!-- floating whatsapp button -->
+  <a href="https://api.whatsapp.com/send?phone=919913963155&text=Hello" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
 
   <!-- loader -->
@@ -665,6 +671,27 @@
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#F96D00" />
     </svg></div>
+
+    <script>
+      function whatsapp(){
+        var Pick = document.getElementById("pickup").value;
+        var drop = document.getElementById("drop").value;
+        var pickdate = document.getElementById("pick_date").value;
+        var dropdate = document.getElementById("drop_date").value;
+        var picktime = document.getElementById("time_pick").value;
+        var car = document.getElementById("cars").value;
+
+        var whatsappurl = "https://wa.me/919601766804?text="
+        +"Pickup Location: "+Pick+"%0a"
+        +"Drop Off Location: "+drop+"%0a"
+        +"Pickup Date: "+pickdate+ "%0a"
+        +"Drop Off Date: "+dropdate+"%0a"
+        +"Preferred Time for Pickup: "+picktime+"%0a"
+        +"Car Type Required: "+car;
+
+        window.open(whatsappurl).focus();
+      }
+    </script>
 
 
   <script src="js/jquery.min.js"></script>
