@@ -132,7 +132,7 @@
         <div class="col-md-12	featured-top">
           <div class="row no-gutters">
             <div class="col-md-4 d-flex align-items-center">
-              <form action="" class="request-form ftco-animate bg-primary" method="post">
+              <form action="mainform.php" method="post" class="request-form ftco-animate bg-primary">
                 <h2>Make your trip</h2>
                 <div class="form-group">
                   <label for="" class="label">Pick-up location</label>
@@ -145,11 +145,11 @@
                 <div class="d-flex">
                   <div class="form-group mr-2">
                     <label for="" class="label">Pick-up date</label>
-                    <input type="text" class="form-control" name="pickup-date" id="pick_date" placeholder="Date">
+                    <input type="date" class="form-control" name="pickup-date" id="pick_date" placeholder="Date">
                   </div>
                   <div class="form-group ml-2">
                     <label for="" class="label">Drop-off date</label>
-                    <input type="text" class="form-control" name="drop-date" id="drop_date" placeholder="Date">
+                    <input type="date" class="form-control" name="drop-date" id="drop_date" placeholder="Date">
                   </div>
                 </div>
                 <div class="form-group">
@@ -170,7 +170,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <input type="submit" onclick="whatsapp()" value="Rent A Car Now" class="btn btn-secondary py-3 px-4" name="submit">
+                  <input type="submit"  value="Rent A Car Now" class="btn btn-secondary py-3 px-4" name="submit">
                 </div>
               </form>
             </div>
@@ -672,7 +672,7 @@
         stroke="#F96D00" />
     </svg></div>
 
-    <script>
+    <!-- <script>
       function whatsapp(){
         var Pick = document.getElementById("pickup").value;
         var drop = document.getElementById("drop").value;
@@ -691,7 +691,7 @@
 
         window.open(whatsappurl).focus();
       }
-    </script>
+    </script> -->
 
 
   <script src="js/jquery.min.js"></script>

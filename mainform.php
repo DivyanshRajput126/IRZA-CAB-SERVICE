@@ -5,9 +5,9 @@ if (isset($_POST['email']))
 {
     $pickup = $_POST['pickup'];
     $drop = $_POST['drop'];
-    $pdate = $_POST['pickup-date'];
-    $ddate = $_POST['drop-date'];
-    $ptime = $_POST['pickup-time'];
+    $pdate = $_POST['pick_date'];
+    $ddate = $_POST['drop_date'];
+    $ptime = $_POST['pick_time'];
     $car = $_POST['car'];
 	
     // $name = $_POST['name'];
@@ -71,7 +71,7 @@ else
 }
 ?>
 
-<meta http-equiv="refresh" content="0; URL='https://divyanshrajput126.github.io/Irza/contact'" />
+<meta http-equiv="refresh" content="0; URL='https://irzacabservice.com'" />
 
 
 </body>

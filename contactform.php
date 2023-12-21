@@ -25,7 +25,7 @@ $to .= 'divyanshrajput126@gmail.com' . ', ';
 
 
 // // subject
-// $subject = 'Email From Website';
+$subject = 'Enquiry From Website';
 
 // message
 	$message = '<html><body>';
@@ -40,7 +40,7 @@ $to .= 'divyanshrajput126@gmail.com' . ', ';
 	$message .= "</body></html>";
 
     // subject
-$subject = 'Booking Enquiry from Website';
+// $subject = 'Booking Enquiry from Website';
 
 // message
 	// $message = '<html><body>';
@@ -72,7 +72,7 @@ else
 }
 ?>
 
-<meta http-equiv="refresh" content="0; URL='https://divyanshrajput126.github.io/Irza/contact'" />
+<meta http-equiv="refresh" content="0; URL='https://irzacabservice.com/contact'" />
 
 
 </body>
