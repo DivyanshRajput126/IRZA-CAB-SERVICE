@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-if (isset($_POST['email']))
+if (isset($_POST['phone']))
   {
 	$pickup = $_POST['pickup'];
 	$drop = $_POST['drop'];
@@ -54,7 +54,7 @@ else
 }
 ?>
 
-<meta http-equiv="refresh" content="0; URL='https://irzacabservice.com'" />
+<!-- <meta http-equiv="refresh" content="0; URL='https://irzacabservice.com'" /> -->
 
 
 </body>
