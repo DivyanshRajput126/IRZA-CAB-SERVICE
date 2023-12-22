@@ -7,7 +7,7 @@ if (isset($_POST['email']))
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
 	// $type = $_POST['type'];
-	$subject1 = "Feedback from Website";
+	$subject1 = "Enquiry from Website";
 	$messages = $_POST['messages'];
 
 // multiple recipients
