@@ -3,32 +3,37 @@
 <?php
 if (isset($_POST['email']))
   {
-	$name = $_POST['name'];
-	$email = $_POST['email'];
+	$pickup = $_POST['pickup'];
+	$drop = $_POST['drop'];
+	$pick_date = $_POST['pick_date'];
+	$drop_date = $_POST['drop_date'];
+	$pick_time = $_POST['pick_time'];
 	$phone = $_POST['phone'];
-	// $type = $_POST['type'];
-	$subject1 = "Enquiry from Website";
-	$messages = $_POST['messages'];
+	$subject1 = "Booking from Website";
+	$car = $_POST['car'];
 
 // multiple recipients
 $to  = 'divyanshrajput126@gmail.com' . ', '; // note the comma
-$to .= 'info@irzacabservice.com' . ', ';
 $to .= 'divyanshr264@gmail.com' . ', ';
-
+$to .= 'info@irzacabservice.com' . ', ';
 
 
 
 // subject
-$subject = 'Email From Website';
+$subject = 'Booking From Website';
 
 // message
 	$message = '<html><body>';
 	$message .= '<table width="100%" rules="all" style="border-color: #666;" cellpadding="10">';
-	$message .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . $name . "</td></tr>";
-	$message .= "<tr><td><strong>Email:</strong> </td><td>" . $email . "</td></tr>";
-	$message .= "<tr><td><strong>Phone Number:</strong> </td><td>" . $phone . "</td></tr>";
 	$message .= "<tr><td><strong>Subject:</strong> </td><td>" . $subject1 . "</td></tr>";
-	$message .= "<tr><td><strong>Message:</strong> </td><td>" . $messages . "</td></tr>";
+	$message .= "<tr><td><strong>Pickup Location:</strong> </td><td>" . $pickup . "</td></tr>";
+	$message .= "<tr><td><strong>Drop Location:</strong> </td><td>" . $drop . "</td></tr>";
+	$message .= "<tr><td><strong>Pickup Date:</strong> </td><td>" . $pick_date . "</td></tr>";
+	$message .= "<tr><td><strong>Drop Date:</strong> </td><td>" . $drop_date . "</td></tr>";
+	$message .= "<tr><td><strong>Pickup Time:</strong> </td><td>" . $pick_time . "</td></tr>";
+	$message .= "<tr><td><strong>Phone Number:</strong> </td><td>" . $phone . "</td></tr>";
+	$message .= "<tr><td><strong>Car:</strong> </td><td>" . $car . "</td></tr>";
+	// $message .= "<tr><td><strong>Message:</strong> </td><td>" . $messages . "</td></tr>";
 	$message .= "</table>";
 	$message .= "</body></html>";
 
@@ -49,7 +54,7 @@ else
 }
 ?>
 
-<meta http-equiv="refresh" content="0; URL='https://irzacabservice.com/contact.html'" />
+<meta http-equiv="refresh" content="0; URL='https://irzacabservice.com'" />
 
 
 </body>

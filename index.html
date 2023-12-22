@@ -132,7 +132,7 @@
         <div class="col-md-12	featured-top">
           <div class="row no-gutters">
             <div class="col-md-4 d-flex align-items-center">
-              <form action="mainform.php" method="post" class="request-form ftco-animate bg-primary">
+              <form action="mailform.php" method="post" class="request-form ftco-animate bg-primary">
                 <h2>Make your trip</h2>
                 <div class="form-group">
                   <label for="" class="label">Pick-up location</label>
@@ -176,7 +176,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <input type="submit"  value="Rent A Car Now" class="btn btn-secondary py-3 px-4" name="submit">
+                  <input type="submit" id="submit" value="Rent A Car Now" class="btn btn-secondary py-3 px-4" >
                 </div>
               </form>
             </div>
@@ -677,27 +677,6 @@
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#F96D00" />
     </svg></div>
-
-    <!-- <script>
-      function whatsapp(){
-        var Pick = document.getElementById("pickup").value;
-        var drop = document.getElementById("drop").value;
-        var pickdate = document.getElementById("pick_date").value;
-        var dropdate = document.getElementById("drop_date").value;
-        var picktime = document.getElementById("time_pick").value;
-        var car = document.getElementById("cars").value;
-
-        var whatsappurl = "https://wa.me/919913963155?text="
-        +"Pickup Location: "+Pick+"%0a"
-        +"Drop Off Location: "+drop+"%0a"
-        +"Pickup Date: "+pickdate+ "%0a"
-        +"Drop Off Date: "+dropdate+"%0a"
-        +"Preferred Time for Pickup: "+picktime+"%0a"
-        +"Car Type Required: "+car;
-
-        window.open(whatsappurl).focus();
-      }
-    </script> -->
 
 
   <script src="js/jquery.min.js"></script>
