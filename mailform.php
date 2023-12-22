@@ -50,7 +50,7 @@ else
 }
 ?>
 
-<meta http-equiv="refresh" content="0; URL='https://irzacabservice/contact.html'" />
+<meta http-equiv="refresh" content="0; URL='https://irzacabservice.com/contact.html'" />
 
 
 </body>
