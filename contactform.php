@@ -15,17 +15,18 @@ if (isset($_POST['email']))
 	$phone = $_POST['phone'];
 	// $subject = $_POST['subject'];
 	// $subject1 = "Feedback from Website";
-	$subject1 = $_POST['subject'];
+	// $subject1 = $_POST['subject'];
 	$messages = $_POST['messages'];
 
 // multiple recipients
 $to  = 'divyanshr264@gmail.com' . ', '; // note the comma
 $to .= 'divyanshrajput126@gmail.com' . ', ';
+$to .= 'info@irzacabservice.com' . ', ';
 
 
 
 // // subject
-$subject = 'Enquiry From Website';
+// $subject = 'Enquiry From Website';
 
 // message
 	$message = '<html><body>';
@@ -40,7 +41,7 @@ $subject = 'Enquiry From Website';
 	$message .= "</body></html>";
 
     // subject
-// $subject = 'Booking Enquiry from Website';
+$subject = 'Enquiry from Website';
 
 // message
 	// $message = '<html><body>';
