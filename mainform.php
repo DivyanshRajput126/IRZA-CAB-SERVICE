@@ -12,14 +12,16 @@ if (isset($_POST['email']))
 	
     // $name = $_POST['name'];
 	// $email = $_POST['email'];
-	// $phone = $_POST['phone'];
+	$phone = $_POST['phone'];
 	// $type = $_POST['type'];
-	// $subject1 = "Feedback from Website";
+	$subject1 = "Booking from Website";
 	// $messages = $_POST['messages'];
 
 // multiple recipients
 $to  = 'divyanshr264@gmail.com' . ', '; // note the comma
 $to .= 'divyanshrajput126@gmail.com' . ', ';
+$to .= 'info@irzacabservice.com' . ', ';
+
 
 
 
@@ -31,7 +33,6 @@ $to .= 'divyanshrajput126@gmail.com' . ', ';
 // 	$message .= '<table width="100%" rules="all" style="border-color: #666;" cellpadding="10">';
 // 	$message .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . $name . "</td></tr>";
 // 	$message .= "<tr><td><strong>Email:</strong> </td><td>" . $email . "</td></tr>";
-// 	$message .= "<tr><td><strong>Phone Number:</strong> </td><td>" . $phone . "</td></tr>";
 // 	$message .= "<tr><td><strong>Subject:</strong> </td><td>" . $subject1 . "</td></tr>";
 // 	$message .= "<tr><td><strong>Type Of Service:</strong> </td><td>" . $type . "</td></tr>";
 // 	$message .= "<tr><td><strong>Message:</strong> </td><td>" . $messages . "</td></tr>";
@@ -44,11 +45,13 @@ $subject = 'Booking Enquiry from Website';
 // message
 	$message = '<html><body>';
 	$message .= '<table width="100%" rules="all" style="border-color: #666;" cellpadding="10">';
+	$message .= "<tr><td><strong>Subject:</strong> </td><td>" . $subject1 . "</td></tr>";
 	$message .= "<tr style='background: #eee;'><td><strong>Pick-Up Location:</strong> </td><td>" . $pickup . "</td></tr>";
 	$message .= "<tr><td><strong>Drop-Off Location:</strong> </td><td>" . $drop . "</td></tr>";
 	$message .= "<tr><td><strong>Pick-Up Date:</strong> </td><td>" . $pdate . "</td></tr>";
 	$message .= "<tr><td><strong>Drop-Off Date:</strong> </td><td>" . $ddate . "</td></tr>";
 	$message .= "<tr><td><strong>Pick-Up Time:</strong> </td><td>" . $ptime . "</td></tr>";
+	$message .= "<tr><td><strong>Phone Number:</strong> </td><td>" . $phone . "</td></tr>";
 	$message .= "<tr><td><strong>Car:</strong> </td><td>" . $car . "</td></tr>";
 	// $message .= "<tr><td><strong>Message:</strong> </td><td>" . $messages . "</td></tr>";
 	$message .= "</table>";
@@ -71,7 +74,7 @@ else
 }
 ?>
 
-<meta http-equiv="refresh" content="0; URL='https://irzacabservice.com'" />
+<meta http-equiv="refresh" content="0; URL='https://irzacabservice.com/index.html'" />
 
 
 </body>
