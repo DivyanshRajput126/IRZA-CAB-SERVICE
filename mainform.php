@@ -30,7 +30,7 @@ $subject = 'Booking From Website';
 	$message .= "<tr><td><strong>Drop Date:</strong> </td><td>" . $drop_date . "</td></tr>";
 	$message .= "<tr><td><strong>Pickup Time:</strong> </td><td>" . $pick_time . "</td></tr>";
 	$message .= "<tr><td><strong>Phone Number:</strong> </td><td>" . $phone . "</td></tr>";
-	$message .= "<tr><td><strong>Car:</strong> </td><td>" . $car . "</td></tr>";
+	$message .= "<tr><td><strong>Car :</strong> </td><td>" . $car . "</td></tr>";
 	$message .= "</table>";
 	$message .= "</body></html>";
 
