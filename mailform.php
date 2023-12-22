@@ -54,7 +54,7 @@ else
 }
 ?>
 
-<!-- <meta http-equiv="refresh" content="0; URL='https://irzacabservice.com'" /> -->
+<meta http-equiv="refresh" content="0; URL='https://irzacabservice.com'" />
 
 
 </body>
